@@ -2,7 +2,7 @@ body {
     padding:0;
     margin:0;
     padding-top:145px;
-    background-color: #6b59b9;
+    background-color: #1c1c1c;
 }
 /* EVENTOS SCRIPT */
 .show {
@@ -66,13 +66,13 @@ header {
 .imagem_1 {
     height:700px;
     flex:1;
-    background:linear-gradient(90deg, #000, #6b59b9);
+    background: linear-gradient(90deg, #2133b1, #1c1c1c);
     background-size:100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.imagem_1 img {
+.img_parte1 {
     height: 680px;
     width: 50%;
     margin-top: 20px;
@@ -85,6 +85,7 @@ header {
 }
 .sobre_mim h2 {
     font-size:50px;
+    text-align: center;
     font-family: "Orbitron";
     color:#cbbe01;
     font-weight:bold;
@@ -108,9 +109,9 @@ header {
 .imagem_2 {
     height:700px;
     flex:1;
-    background-image:url("../media/imagem_fundo2.jpg");
-    background-size:111%;
-    background-position: center;
+    background-image:url("../media/imagem_fundo2.png");
+    background-size:200%;
+    background-position: left;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +121,18 @@ header {
     width: 50%;
     margin-top: 20px;
 }
+.icons_experiencia {
+    height:45px;
+}
 /* CONTEÚDO TERCIÁRIO */
+.img_parte3 {
+    height:auto;
+    width:90%;
+}
+.imagem_1.parte3 {
+    background: linear-gradient(90deg, #7a0ccf, #1c1c1c);
+}
+/* CONTATO */
 .alinhar_fieldset {
     display:flex;
 }
@@ -132,6 +144,8 @@ header {
     border:3px solid #cbbe01;
     margin:40px;
     padding:20px;
+    display: flex;
+    align-items: center;
 }
 .sobre_mim legend {
     font-size:25px;
@@ -143,7 +157,7 @@ header {
 .input {
     border:0;
     outline: 0;
-    background-color:#6b59b9;
+    background-color: transparent;
     border-bottom:3px solid #FFF;
     color:#FFF;
     font-size:22px;
@@ -158,7 +172,7 @@ header {
   }
 textarea {
     resize:none;
-    background-color: #6b59b9;
+    background-color: transparent;
     outline: 0;
     border:1px solid #FFF;
     color:#FFF;
