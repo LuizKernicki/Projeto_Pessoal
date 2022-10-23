@@ -238,6 +238,9 @@ textarea {
     .lado_1 h1 {
         font-size:25px;
     }
+    .menu_faketrigger {
+        display:none;
+    }
 }
 @media only screen and (min-width:1350px) and (max-width:1599px) {
     .lado_1 h1 {
