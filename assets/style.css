@@ -14,12 +14,13 @@ body {
 }
 /* HEADER */
 header {
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top:0;
 }
 .cabecalho {
     background-color:#cbbe01;
+    height: 105px;
     width:auto;
     padding:20px;
     display:flex;
@@ -74,7 +75,7 @@ header {
 }
 .img_parte1 {
     height: 680px;
-    width: 50%;
+    width: auto;
     margin-top: 20px;
 }
 .sobre_mim {
@@ -107,10 +108,11 @@ header {
     border-bottom:2px solid #FFF;
 }
 .imagem_2 {
-    height:700px;
+    height:auto;
     flex:1;
     background-image:url("../media/imagem_fundo2.png");
     background-size:200%;
+    background-repeat: no-repeat;
     background-position: left;
     display: flex;
     justify-content: center;
@@ -211,4 +213,248 @@ textarea {
 /* FOOTER */
 .cabecalho.fim {
     height:0px;
+}
+/* RESPONSIVIDADE */
+@media only screen and (min-width:1921px) and (max-width:2561px) {
+    main {
+        width:2560px;
+    }
+    .responsive {
+        margin-left: 10%;
+        margin-right: 10%;
+        border: solid #FFF 3px;
+    }
+    .menu_mobile {
+        display:none;
+    }
+    .menu_mobile span {
+        display:none;
+    }
+    .menu_faketrigger {
+        display:none;
+    }
+}
+@media only screen and (min-width:1600px) and (max-width:1920px) {
+    .lado_1 h1 {
+        font-size:25px;
+    }
+}
+@media only screen and (min-width:1350px) and (max-width:1599px) {
+    .lado_1 h1 {
+        font-size:25px;
+    }
+    .sobre_mim p {
+        font-size:20px;
+    }
+    .sobre_mim h2 {
+        font-size: 40px;
+    }
+    .icons_experiencia {
+        display:none;
+    }
+    .menu_mobile {
+        display:none;
+    }
+    .menu_mobile span {
+        display:none;
+    }
+    .menu_faketrigger {
+        display:none;
+    }
+}
+@media only screen and (min-width:1200px) and (max-width:1349px) {
+    .lado_1 h1 {
+        font-size:20px;
+    }
+    .lado_2 ul li {
+        font-size:15px;
+    }
+    .icons_experiencia {
+        display:none;
+    }
+    .sobre_mim p {
+        font-size:20px;
+    }
+    .sobre_mim h2 {
+        font-size:35px;
+    }
+    .menu_mobile {
+        display:none;
+    }
+    .menu_mobile span {
+        display:none;
+    }
+    .menu_faketrigger {
+        display:none;
+    }
+}
+@media only screen and (min-width:650px) and (max-width:1199px) {
+    .lado_1 h1 {
+        font-size:18px;
+    }
+    .lado_2 ul li {
+        font-size:14px;
+    }
+    .icons_experiencia {
+        display:none;
+    }
+    .sobre_mim p {
+        font-size:20px;
+    }
+    .sobre_mim h2 {
+        font-size:35px;
+    }
+    .imagem_2 {
+        display:none;
+    }
+    .imagem_1.parte3 {
+        display: none;
+    }
+    .imagem_1 {
+        background: linear-gradient(90deg, #2133b1, #7a0ccf);
+        border-bottom:2px solid #FFF;
+    }
+    #EO {
+        background: linear-gradient(90deg, #2133b1, #1c1c1c, #1c1c1c);
+    }
+    #QEPM {
+        background: linear-gradient(270deg, #7a0ccf, #1c1c1c, #1c1c1c);
+    }
+    .container {
+        display:block;
+    }
+    .menu_mobile {
+        display:none;
+    }
+    .menu_mobile span {
+        display:none;
+    }
+    .menu_faketrigger {
+        display:none;
+    }
+}
+@media only screen and (min-width:0px) and (max-width:649px) {
+    .lado_1 h1 {
+        font-size:20px;
+    }
+    .lado_2 ul li {
+        font-size:12px;
+    }
+    .icons_experiencia {
+        display:none;
+    }
+    .sobre_mim p {
+        font-size:20px;
+    }
+    .sobre_mim h2 {
+        font-size:35px;
+    }
+    .img_parte1 {
+        width: -webkit-fill-available;
+    }
+    .imagem_2 {
+        display:none;
+    }
+    .imagem_1.parte3 {
+        display: none;
+    }
+    .imagem_1 {
+        background: linear-gradient(90deg, #2133b1, #7a0ccf);
+        border-bottom:2px solid #FFF;
+    }
+    #EO {
+        background: linear-gradient(90deg, #2133b1, #1c1c1c, #1c1c1c);
+    }
+    #QEPM {
+        background: linear-gradient(270deg, #7a0ccf, #1c1c1c, #1c1c1c);
+    }
+    .container {
+        display:block;
+    }
+    .alinhar_icons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .lado_2 {
+        margin-right:30px;
+        font-size:0;
+        height: 105px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .lado_2 ul {
+        position:absolute;
+        z-index:998;
+        right:0;
+        top:0;
+        width:250px;
+        height:calc(100vh - 100px);
+        padding-top:100px;
+        padding-left:0;
+        padding-right:0;
+        background-color:#1c1c1c;
+        margin-right:-300px;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: all ease .2s;
+    }
+    .lado_2 ul li {
+        border:none;
+        font-size:22px;
+        margin-top:50px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #cbbe01;
+        width: 70%;
+        color:#cbbe01;
+    }
+    .menu_mobile {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        z-index:999;
+    }
+    .menu_mobile span {
+        display: block;
+        width:35px;
+        height:5px;
+        margin-bottom:10px;
+        background-color: #000;
+        border-radius:3px;
+        transition: all ease .2s;
+    }
+    .menu_faketrigger {
+        position:absolute;
+        z-index:1000;
+        width:35px;
+        height:35px;
+        margin:0;
+        opacity:0;
+        cursor:pointer;
+    }
+    .menu_faketrigger:checked ~ .menu_mobile span {
+        background-color: #cbbe01;
+    }
+    .menu_faketrigger:checked ~ .menu_mobile span:nth-child(1) {
+        transform-origin:0% 0%;
+        transform: rotate(45deg) scaleX(1.25);
+    }
+    .menu_faketrigger:checked ~ .menu_mobile span:nth-child(2) {
+        opacity:0;
+    }
+    .menu_faketrigger:checked ~ .menu_mobile span:nth-child(3) {
+        transform-origin:0% 100%;
+        transform: rotate(-45deg) scaleX(1.25);
+    }
+    .menu_faketrigger:checked ~ ul {
+        margin-right:0;
+    }
+    
+    /* REALIZAR EVENTO DE CLICK NO LI */
+
 }

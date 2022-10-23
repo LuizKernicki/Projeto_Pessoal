@@ -4,6 +4,9 @@ const da = (e)=>document.querySelectorAll(e);
 // Animação Container
 let container = d(".container");
 let container2 = d(".container.segundo");
+const selectUl = d(".lado_2 ul");
+const selectLi = d(".lado_2 ul li");
+const fakeTrigger = d(".menu_faketrigger");
 
 window.onload = function() {
     if(d(".container").classList.contains("hide")) {
@@ -31,3 +34,17 @@ function eventClick(Element) {
         behavior: "smooth"
     }); // top realiza a transição inserida em section com um margin de 145 px para o topo a fim de deixar o header aparecendo sem cobrir o conteúdo. Behavior para transição suave.
 }
+
+/*menuItems.forEach(item => {
+    item.addEventListener("click", hideMobile);
+})
+function openMobile(Element) {
+    selectUl.style.margin = "0px 0px 0px 0px"; // top, right, bottom, left
+}
+function hideMobile(Element) {
+    if(fakeTrigger.classList.contains(".menu_faketrigger:checked")){
+        selectUl.style.margin = "0px -300px 0px 0px"; // top, right, bottom, left
+    } else {
+        selectUl.style.margin = "0px 0px 0px 0px"; // top, right, bottom, left
+    }
+}*/

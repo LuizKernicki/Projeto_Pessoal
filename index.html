@@ -17,7 +17,13 @@
                 <h1>Luiz Eduardo Kernicki</h1>
             </div>
             <div class="lado_2">
-                <ul>
+                <input type="checkbox" class="menu_faketrigger" />
+                <div class="menu_mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="mobilehide">
                     <li href="#SM">SOBRE MIM</li>
                     <li href="#EO">EXPERIÊNCIA E OBJETIVOS</li>
                     <li href="#QEPM">QUALIDADES E PONTOS A MELHORAR</li>
@@ -26,8 +32,8 @@
             </div>
         </div>
     </header>
-
     <main>
+        <div class="responsive">
         <div class="container hide">
             <div class="imagem_1">
                 <img class="img_parte1" src="./media/imagem_fundo.png" alt="Carregando..." />
@@ -71,7 +77,7 @@
                 <h2>QUALIDADES E PONTOS A MELHORAR</h2>
                 <p> Sobre minhas qualidades: Sou calmo, responsável, proativo, destemido e muito curioso. Busco aprender coisas novas constantemente, independente de qual seja o assunto, pois acredito que qualquer fonte de experiência e conhecimento 
                     me trará uma sabedoria mais sólida. "Ninguém é tão sábio que não tenha algo para aprender e nem tão tolo que não tenha algo para ensinar" - Blaise Pascal.<br>
-                    Sobre meus pontos a melhorar: Busco aprimorar meu inglês que se encontra em um nível mais básico, melhorar minhas skills em programação e melhorar a comunicação e oratória.
+                    Sobre meus pontos a melhorar: Busco aprimorar meu inglês que se encontra em um nível mais básico, melhorar minhas habilidades em programação e melhorar a comunicação e oratória.
                 </p>
             </div>
         </div>
@@ -80,6 +86,7 @@
             <div id="C" class="sobre_mim" style="background: linear-gradient(90deg, #7a0ccf, #2133b1);">
                 <h2>ENTRE EM CONTATO</h2>
                 <div class="alinhar_fieldset">
+                <!-- CAMPO DE E-MAIL (NECESSÁRIO PHP PARA FUNCIONAR)
                 <fieldset>
                     <legend>Envie um e-mail</legend>
                 <div class="alinhar_input">
@@ -89,9 +96,11 @@
                     <input class="botao" type="submit" name="botao" placeholder="Enviar" />
                 </div>
                 </fieldset>
+                -->
                 <fieldset>
                     <legend>Minhas redes sociais</legend>
                 <div class="alinhar_icons">
+                    <a href="https://wa.me/5542999896678" target="_blank"><img src="./media/whatsapp.png" alt="Carregando..." /><br>Whatsapp</a> 
                     <a href="https://www.linkedin.com/in/luiz-eduardo-kernicki-620804202/" target="_blank"><img style="background-color: #FFF; border-radius: 10px;" src="./media/linkedin.png" alt="Carregando..." /><br>Linkedin</a>
                     <a href="https://github.com/LuizKernicki" target="_blank"><img style="background-color: #FFF;" src="./media/github.png" alt="Carregando..." /><br>Github</a>
                     <a href="https://www.facebook.com/luizeduardo.kernicki/" target="_blank"><img style="background-color: #FFF;" src="./media/facebook.png" alt="Carregando..." /><br>Facebook</a>
@@ -101,12 +110,12 @@
                 </div>
             </div>
         </div>
-
         <footer>
             <div class="cabecalho fim">
     
             </div>
         </footer>
+    </div>
     </main>
     <script src="assets/script.js" ></script>
 </body>
